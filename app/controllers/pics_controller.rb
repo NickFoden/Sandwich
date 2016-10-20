@@ -4,7 +4,7 @@ class PicsController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
-		@pics = Pic.all.order("created_at ASC")
+		@pics = Pic.all.order("created_at asc")
 	end
 
 	def show
