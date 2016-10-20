@@ -1,7 +1,7 @@
 !!! 5
 %html
 %head
-	%title Sandiwch
+	%title Sandwich
 	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
 
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true
@@ -10,7 +10,7 @@
 %body
 	%nav.navbar.navbar-inverse
 		.container
-			.navbar-brand= link_to "Sandwich", root_path
+			.navbar-brand= link_to "Sandwiches Por Vida", root_path
 
 			- if user_signed_in?
 				%ul.nav.navbar-nav.navbar-left
