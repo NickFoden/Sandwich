@@ -1,7 +1,7 @@
 !!! 5
 %html
 %head
-	%title Instagramm
+	%title Sandiwch
 	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
 
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true
@@ -10,11 +10,11 @@
 %body
 	%nav.navbar.navbar-inverse
 		.container
-			.navbar-brand= link_to "Instagramm", root_path
+			.navbar-brand= link_to "Sandwich", root_path
 
 			- if user_signed_in?
 				%ul.nav.navbar-nav.navbar-left
-					%li= link_to "Gram It", new_pic_path
+					%li= link_to "Add New Sandwich", new_pic_path
 					%li= link_to "Settings", edit_user_registration_path
 					%li= link_to "Sign Out", destroy_user_session_path, method: :delete
 
